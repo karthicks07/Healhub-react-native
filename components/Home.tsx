@@ -1,6 +1,5 @@
 import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native'
 import React from 'react'
-import Landing from './Landing';
 function Home({ navigation }) {
     return (
       <SafeAreaView style={styles.container}>
@@ -42,63 +41,88 @@ function Home({ navigation }) {
         <View style={{ height: 10 }} />
         <View style={styles.docmaincontainer}>
           <View style={styles.docouter}>
+
           <View style={styles.doctorcontainer}>
-            <Image source={require('../assets/pics/bellamy.png')} style={styles.picture}/>
+          <TouchableOpacity onPress={() => navigation.navigate('Bellamy')}>
+            <View style={styles.docpic}>
+              <Image source={require('../assets/pics/bellamy.png')} style={styles.picture}/>
+            </View>
             <View style={{ height: 10 }} />
             <View style={styles.docdetails}>
             <Text style={{color:'#222B45', fontSize:16,}}>Dr. Bellamy N</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>Viralogist</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>⭐️ 4.5 (135 reviews)</Text>
             </View>
+          </TouchableOpacity>
           </View>
           <View style={styles.doctorcontainer}>
-            <Image source={require('../assets/pics/mensah.png')} style={styles.picture}/>
+          <TouchableOpacity onPress={() => navigation.navigate('Mensah')}>
+          <View style={styles.docpic}>
+              <Image source={require('../assets/pics/mensah.png')} style={styles.picture}/>
+            </View>
             <View style={{ height: 10 }} />
             <View style={styles.docdetails}>
             <Text style={{color:'#222B45', fontSize:16,}}>Dr. Mensah T</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>Oncologists</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>⭐️ 4.2 (234 reviews)</Text>
             </View>
+          </TouchableOpacity>
           </View>
           </View >
           <View style={styles.docouter}>
           <View style={styles.doctorcontainer}>
-            <Image source={require('../assets/pics/klimisch.png')} style={styles.picture}/>
+          <TouchableOpacity onPress={() => navigation.navigate('Klimisch')}>
+          <View style={styles.docpic}>
+              <Image source={require('../assets/pics/klimisch.png')} style={styles.picture}/>
+            </View>
             <View style={{ height: 10 }} />
             <View style={styles.docdetails}>
             <Text style={{color:'#222B45', fontSize:16,}}>Dr.Klimisch J</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>Surgeon</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>⭐️ 4.0 (544 reviews)</Text>
             </View>
+            </TouchableOpacity>
           </View>
           <View style={styles.doctorcontainer}>
-            <Image source={require('../assets/pics/martinez.png')} style={styles.picture}/>
+          <TouchableOpacity onPress={() => navigation.navigate('Martinez')}>
+          <View style={styles.docpic}>
+              <Image source={require('../assets/pics/martinez.png')} style={styles.picture}/>
+            </View>
             <View style={{ height: 10 }} />
             <View style={styles.docdetails}>
             <Text style={{color:'#222B45', fontSize:16,}}>Dr. Martinez K</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>Pediatriction</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>⭐️ 3.9 (15 reviews)</Text>
             </View>
+            </TouchableOpacity>
           </View>
           </View >
           <View style={styles.docouter}>
           <View style={styles.doctorcontainer}>
-            <Image source={require('../assets/pics/marc.png')} style={styles.picture}/>
+          <TouchableOpacity onPress={() => navigation.navigate('Marc')}>
+          <View style={styles.docpic}>
+              <Image source={require('../assets/pics/marc.png')} style={styles.picture}/>
+            </View>
             <View style={{ height: 10 }} />
             <View style={styles.docdetails}>
             <Text style={{color:'#222B45', fontSize:16,}}>Dr. Marc M</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>Viralogist</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>⭐️ 4.4 (155 reviews)</Text>
             </View>
+            </TouchableOpacity>
           </View>
           <View style={styles.doctorcontainer}>
-            <Image source={require('../assets/pics/boyle.png')} style={styles.picture}/>
+          <TouchableOpacity onPress={() => navigation.navigate('Marc')}>
+          <View style={styles.docpic}>
+              <Image source={require('../assets/pics/boyle.png')} style={styles.picture}/>
+            </View>
             <View style={{ height: 10 }} />
             <View style={styles.docdetails}>
             <Text style={{color:'#222B45', fontSize:16,}}>Dr. Boyle J</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>Radiologists</Text>
             <Text style={{color:'#6B779A', fontSize:13,}}>⭐️ 4.1 (2135 reviews)</Text>
             </View>
+            </TouchableOpacity>
           </View>
           </View >
         </View>
@@ -231,6 +255,12 @@ docdetails:{
   justifyContent:'space-evenly',
   alignItems:'center'
 },
+docpic:{
+  display:'flex',
+  flexDirection:'row',
+  justifyContent:'center',
+  alignItems:'center'
+}
 }
 );
 
