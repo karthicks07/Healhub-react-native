@@ -19,17 +19,20 @@ function Bellamy({ navigation }) {
               </View>
             </View>
             <View>
-            <Text style={styles.heading}>Doctors</Text>
+            <Text style={styles.heading}>Doctorsgnhdrgnns</Text>
             </View>
             <View>
-              <View style={styles.logout}>
+              <View style={styles.logout2}>
                 <View>
-                  <Image source={require('../assets/pics/filter.png')} style={styles.filtericon} />
+                  <Image source={require('../assets/pics/KebabMenu.png')} style={styles.filtericon} />
                 </View>
               </View>
             </View>
           </View>
         </View>
+        <View>
+            
+          </View>
         <View style={{ height: 15 }} />
         </View>
     </SafeAreaView>
@@ -42,11 +45,16 @@ const styles = StyleSheet.create({
     backgroundColor:'#F7F7F7'
   },
  maincontainer:{
-  height:900,
+  height:420,
   width:'100%',
   display:'flex',
   flexDirection:'column',
   alignItems:'center',
+  backgroundColor:'blue',
+  borderTopLeftRadius: 0,
+  borderTopRightRadius: 0,
+  borderBottomLeftRadius: 40,
+  borderBottomRightRadius: 40,
  },
  head:{
   height:65,
@@ -81,6 +89,15 @@ const styles = StyleSheet.create({
   elevation:8,
   backgroundColor:'white'
  },
+ logout2:{
+  height:40,
+  width:40,
+  borderRadius:10,
+  alignItems:'center',
+  display:'flex',
+  flexDirection:'row',
+  justifyContent:'center',
+ },
  logout1:{
   height:40,
   width:40,
@@ -92,8 +109,8 @@ const styles = StyleSheet.create({
   backgroundColor:'transparent'
  },
  filtericon:{
-  height:18,
-  width:20,
+  height:18.5,
+  width:4,
  },
  leftarrow:{
   height:17,
