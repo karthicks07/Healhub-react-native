@@ -195,7 +195,6 @@ doctorprofile:{
   justifyContent:'center',
   alignItems:'center',
   position: 'relative',
-  elevation:8,
 },
 doctorpic:{
   height:110,

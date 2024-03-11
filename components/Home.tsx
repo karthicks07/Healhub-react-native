@@ -71,7 +71,7 @@ function Home({ navigation }) {
           </View >
           <View style={styles.docouter}>
           <View style={styles.doctorcontainer}>
-          <TouchableOpacity onPress={() => navigation.navigate('Klimisch')}>
+          <TouchableOpacity onPress={() => navigation.navigate('Kilmisch')}>
           <View style={styles.docpic}>
               <Image source={require('../assets/pics/klimisch.png')} style={styles.picture}/>
             </View>
@@ -112,7 +112,7 @@ function Home({ navigation }) {
             </TouchableOpacity>
           </View>
           <View style={styles.doctorcontainer}>
-          <TouchableOpacity onPress={() => navigation.navigate('Marc')}>
+          <TouchableOpacity onPress={() => navigation.navigate('Boyle')}>
           <View style={styles.docpic}>
               <Image source={require('../assets/pics/boyle.png')} style={styles.picture}/>
             </View>
