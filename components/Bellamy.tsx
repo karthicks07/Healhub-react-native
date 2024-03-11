@@ -71,8 +71,8 @@ function Bellamy({ navigation }) {
               </View>
               <View style={styles.messegeinner2}>
               <View style={{ height: 15 }} />
-                <Text style={{fontSize:19,color:'#222B45'}}>Messaging</Text>
-                <Text style={{fontSize:16,color:'#6B779A'}}>Chat me up, share photos.</Text>
+                <Text style={{fontSize:17,color:'#222B45'}}>Messaging</Text>
+                <Text style={{fontSize:14,color:'#6B779A'}}>Chat me up, share photos.</Text>
               </View>
             </View>
             <View style={styles.messege}>
@@ -81,8 +81,8 @@ function Bellamy({ navigation }) {
               </View>
               <View style={styles.messegeinner2}>
               <View style={{ height: 15 }} />
-                <Text style={{fontSize:19,color:'#222B45'}}>Audio Call</Text>
-                <Text style={{fontSize:16,color:'#6B779A'}}>Call your doctor directly.</Text>
+                <Text style={{fontSize:17,color:'#222B45'}}>Audio Call</Text>
+                <Text style={{fontSize:14,color:'#6B779A'}}>Call your doctor directly.</Text>
               </View>
             </View>
             <View style={styles.messege}>
@@ -91,8 +91,8 @@ function Bellamy({ navigation }) {
               </View>
               <View style={styles.messegeinner2}>
               <View style={{ height: 15 }} />
-                <Text style={{fontSize:19,color:'#222B45'}}>Video Call</Text>
-                <Text style={{fontSize:16,color:'#6B779A'}}>See your doctor live.</Text>
+                <Text style={{fontSize:17,color:'#222B45'}}>Video Call</Text>
+                <Text style={{fontSize:14,color:'#6B779A'}}>See your doctor live.</Text>
               </View>
             </View>
           </View>
@@ -195,6 +195,7 @@ doctorprofile:{
   justifyContent:'center',
   alignItems:'center',
   position: 'relative',
+  elevation:8,
 },
 doctorpic:{
   height:110,
