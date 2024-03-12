@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Healhub",
-    "slug": "Healhub",
+    "slug": "healhub",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -29,8 +29,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "3157a255-c126-4b7a-a056-1a8b6a110e86"
+        "projectId": "534b9aaf-45d2-4203-a2a6-6924099ca408"
       }
-    }
+    },
+    "owner": "karthicks07"
   }
 }
