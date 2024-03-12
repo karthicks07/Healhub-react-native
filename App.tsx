@@ -9,6 +9,7 @@ import Kilmisch from './components/Klimisch';
 import Martinez from './components/Martinez';
 import Marc from './components/Marc';
 import Boyle from './components/Boyle';
+
 const Stack = createStackNavigator();
 
 export default function App() {
