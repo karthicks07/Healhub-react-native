@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ScrollView } from 'react-native'
 import React, { useState } from 'react';
 
 function Home({ navigation }) {
@@ -10,9 +10,53 @@ function Home({ navigation }) {
     { name: 'Dr. Martinez K', specialty: 'Pediatriction', rating: '⭐️ 3.9 (15 reviews)', image: require('../assets/pics/martinez.png'), route:'Martinez' },
     { name: 'Dr. Marc M', specialty: 'Viralogist', rating: '⭐️ 4.4 (155 reviews)', image: require('../assets/pics/marc.png'), route:'Marc' },
     { name: 'Dr. Boyle J', specialty: 'Radiologist', rating: '⭐️ 4.1 (2134 reviews)', image: require('../assets/pics/boyle.png'), route:'Boyle' },
+    { 
+      name: 'Dr. Smith W', 
+      specialty: 'Cardiologist', 
+      rating: '⭐️ 4.8 (98 reviews)', 
+      image: require('../assets/pics/martinez.png'), 
+      route: 'Marc'
+    },
+    { 
+      name: 'Dr. Lee A', 
+      specialty: 'Neurologist', 
+      rating: '⭐️ 4.6 (176 reviews)', 
+      image: require('../assets/pics/marc.png'), 
+      route: 'Marc'
+    },
+    { 
+      name: 'Dr. Johnson R', 
+      specialty: 'Dermatologist', 
+      rating: '⭐️ 4.7 (210 reviews)', 
+      image: require('../assets/pics/boyle.png'), 
+      route: 'Marc'
+    },
+    { 
+      name: 'Dr. Garcia S', 
+      specialty: 'Endocrinologist', 
+      rating: '⭐️ 4.9 (312 reviews)', 
+      image: require('../assets/pics/klimisch.png'), 
+      route: 'Marc'
+    },
+    { 
+      name: 'Dr. Wang Y', 
+      specialty: 'Orthopedic Surgeon', 
+      rating: '⭐️ 4.5 (176 reviews)', 
+      image: require('../assets/pics/bellamy.png'), 
+      route: 'Marc'
+    },
+    { 
+      name: 'Dr. Patel M', 
+      specialty: 'Psychiatrist', 
+      rating: '⭐️ 4.6 (264 reviews)', 
+      image: require('../assets/pics/mensah.png'), 
+      route: 'Marc'
+    }
+    
   ];
   const filteredDoctors = doctors.filter(doctor =>
-    doctor.name.toLowerCase().includes(searchQuery.toLowerCase())
+    doctor.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    doctor.specialty.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
@@ -55,6 +99,7 @@ function Home({ navigation }) {
           />
         </SafeAreaView>
         <View style={{ height: 10 }} />
+        <ScrollView >
         <View style={styles.docmaincontainer}>
           {
           filteredDoctors.length === 0 ? (
@@ -73,6 +118,8 @@ function Home({ navigation }) {
             </TouchableOpacity>
           )))}
         </View>
+        <View style={{ height: 120 }} />
+        </ScrollView>
       </View>
     </SafeAreaView>
   )
@@ -170,7 +217,7 @@ const styles = StyleSheet.create({
   },
   doctorcontainer: {
     height: 170,
-    width: '41%',
+    width: 140,
     backgroundColor: 'white',
     borderRadius: 20,
     elevation: 8,
