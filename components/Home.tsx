@@ -56,7 +56,7 @@ function Home({ navigation }) {
   ];
   const filteredDoctors = doctors.filter(doctor =>
     doctor.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    doctor.specialty.toLowerCase().includes(searchQuery.toLowerCase())
+    doctor.specialty.toLowerCase().startsWith(searchQuery.toLowerCase())
   );
 
   return (
