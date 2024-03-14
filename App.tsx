@@ -9,6 +9,7 @@ import Klimisch from './components/Klimisch';
 import Martinez from './components/Martinez';
 import Marc from './components/Marc';
 import Boyle from './components/Boyle';
+import Booking from './components/Booking';
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,7 @@ export default function App() {
         <Stack.Screen name="Martinez" component={Martinez} options={{ headerShown: false }} />
         <Stack.Screen name="Marc" component={Marc} options={{ headerShown: false }} />
         <Stack.Screen name="Boyle" component={Boyle} options={{ headerShown: false }} />
+        <Stack.Screen name="Booking" component={Booking} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

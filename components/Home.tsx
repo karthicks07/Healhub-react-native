@@ -202,10 +202,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
   },
-  searchicon: {
-    height: 16,
-    width: 18
-  },
   docmaincontainer: {
     width: '100%',
     display: 'flex',

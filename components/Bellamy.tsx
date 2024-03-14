@@ -96,9 +96,11 @@ function Bellamy({ navigation }) {
               </View>
             </View>
           </View>
+          <TouchableOpacity onPress={() => navigation.navigate('Booking')}>
           <View style={styles.bookbutton}>
             <Text style={{fontSize:16,color:'#fff'}}>Book Appointment</Text>
           </View>
+          </TouchableOpacity>
         </View>
         <View>
             
