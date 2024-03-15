@@ -84,25 +84,9 @@ function Home({ navigation }) {
             <View>
               <Text style={styles.heading}>Doctors</Text>
             </View>
-            <View style={styles.logoutFilter}>
-            <TouchableOpacity onPress={toggleDropdown}>
               <View style={styles.logout1}>
                 <View>
-                  <Image source={require('../assets/pics/KebabMenu.png')} style={styles.filtericon} />
                 </View>
-              </View>
-            </TouchableOpacity>
-
-            <Modal
-              transparent={true} visible={isDropdownVisible} onRequestClose={() => setIsDropdownVisible(false)}>
-              <TouchableOpacity style={styles.modalContainer} activeOpacity={1} onPressOut={() => setIsDropdownVisible(false)}>
-                <View style={styles.dropdownContainer}>
-                  <TouchableOpacity onPress={() => navigation.navigate('HelpSupport')}>
-                    <Text style={styles.option}>Help & Support</Text>
-                  </TouchableOpacity>
-                </View>
-              </TouchableOpacity>
-            </Modal>
             </View>
           </View>
         </View>
@@ -187,15 +171,6 @@ const styles = StyleSheet.create({
     elevation: 8,
     backgroundColor: 'white'
   },
-  logoutFilter: {
-    height: 40,
-    width: 40,
-    borderRadius: 10,
-    alignItems: 'center',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
   logout1: {
     height: 40,
     width: 40,
@@ -274,30 +249,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center'
-  },
-  modalContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-   backgroundColor:'transparent'
-  },
-  modalContent: {
-    backgroundColor: 'white',
-    padding: 20,
-    borderRadius: 10,
-  },
-  dropdownContainer: {
-    height:60,
-    position: 'absolute',
-    top: 50, 
-    right: 35,
-    backgroundColor: 'white',
-    padding: 20,
-    borderRadius: 8,
-    elevation: 5,
-  },
-  option: {
-    fontSize: 15,
   },
 });
 
