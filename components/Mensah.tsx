@@ -1,6 +1,12 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking } from 'react-native'
 import React from 'react'
 function Mensah({ navigation }) {
+  const Whatsapp = async (phoneNumber) => {
+    Linking.openURL(`whatsapp://send?phone=${phoneNumber}`);
+  };
+  const DialPad= async(phoneNumber)=>{
+    Linking.openURL(`tel:${phoneNumber}`);
+  }
     return (
       <SafeAreaView style={styles.container}>
        <View style={{ height: 35 }} />
@@ -65,6 +71,7 @@ function Mensah({ navigation }) {
         <View style={styles.details}>
           <Text style={{fontSize:22,color:'#222B45'}}>Communication</Text>
           <View style={styles.communication}>
+          <TouchableOpacity onPress={() => Whatsapp(`whatsapp://send?phone=${6381145567}`)}>
             <View style={styles.messege}>
               <View style={styles.messegeinner1}>
                 <Image source={require('../assets/pics/messege.png')} style={styles.messegeicon}/>
@@ -75,6 +82,8 @@ function Mensah({ navigation }) {
                 <Text style={{fontSize:14,color:'#6B779A'}}>Chat me up, share photos.</Text>
               </View>
             </View>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() =>DialPad('9876543210')}>
             <View style={styles.messege}>
               <View style={styles.messegeinner1}>
                 <Image source={require('../assets/pics/call.png')} style={styles.messegeicon}/>
@@ -85,6 +94,8 @@ function Mensah({ navigation }) {
                 <Text style={{fontSize:14,color:'#6B779A'}}>Call your doctor directly.</Text>
               </View>
             </View>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => Whatsapp(`whatsapp://send?phone=${6381145567}`)}>
             <View style={styles.messege}>
               <View style={styles.messegeinner1}>
                 <Image source={require('../assets/pics/video.png')} style={styles.messegeicon}/>
@@ -95,6 +106,7 @@ function Mensah({ navigation }) {
                 <Text style={{fontSize:14,color:'#6B779A'}}>See your doctor live.</Text>
               </View>
             </View>
+            </TouchableOpacity>
           </View>
           <View style={styles.bookbutton}>
             <Text style={{fontSize:16,color:'#fff'}}>Book Appointment</Text>

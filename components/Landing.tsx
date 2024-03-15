@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native'
 import React from 'react'
 function Landing({ navigation }) {
     return (
@@ -151,8 +151,8 @@ const styles = StyleSheet.create({
   flexDirection:'column',
   justifyContent:'space-evenly',
   alignItems:'center',
-  elevation:10,
-  shadowColor:'blue'
+  elevation:15,
+  shadowColor:'#3E64FF'
  },
 head1:{
   height:130,
