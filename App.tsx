@@ -10,7 +10,7 @@ import Martinez from './components/Martinez';
 import Marc from './components/Marc';
 import Boyle from './components/Boyle';
 import Booking from './components/Booking';
-
+import HelpSupport from './components/HelpSupport';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -26,6 +26,7 @@ export default function App() {
         <Stack.Screen name="Marc" component={Marc} options={{ headerShown: false }} />
         <Stack.Screen name="Boyle" component={Boyle} options={{ headerShown: false }} />
         <Stack.Screen name="Booking" component={Booking} options={{ headerShown: false }} />
+        <Stack.Screen name="HelpSupport" component={HelpSupport} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
