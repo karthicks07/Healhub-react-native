@@ -298,7 +298,7 @@ gender: {
   width: 80,
   borderRadius: 10,
   backgroundColor: 'white',
-  elevation: 4,
+  elevation: 2,
   justifyContent: 'center',
   alignItems: 'center'
 },
