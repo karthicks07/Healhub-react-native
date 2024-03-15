@@ -82,7 +82,7 @@ function Home({ navigation }) {
             <View>
               <View style={styles.logout}>
                 <View>
-                  <Image source={require('../assets/pics/filter.png')} style={styles.filtericon} />
+                  <Image source={require('../assets/pics/KebabMenu.png')} style={styles.filtericon} />
                 </View>
               </View>
             </View>
@@ -180,8 +180,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent'
   },
   filtericon: {
-    height: 18,
-    width: 20,
+    height: 21,
+    width: 4.5,
   },
   leftarrow: {
     height: 17,
