@@ -110,7 +110,7 @@ function Klimisch({ navigation }) {
           </View>
           <TouchableOpacity onPress={() => navigation.navigate('Booking')}>
           <View style={styles.bookbutton}>
-            <Text style={{fontSize:16,color:'#fff'}}>Book Appointment</Text>
+            <Text style={{fontSize:16,color:'#fff'}}>Continue to Booking</Text>
           </View>
           </TouchableOpacity>
         </View>

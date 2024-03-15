@@ -146,7 +146,7 @@ function Booking({ navigation }) {
               </View>
               <View style={{ height: 50 }} />
               <View style={styles.bookbutton}>
-              <TouchableOpacity onPress={() => {/* handle button press */}} style={styles.button}>
+              <TouchableOpacity onPress={() => navigation.navigate('Loading')} style={styles.button}>
                 <Text style={styles.buttonText}>Book Appointment</Text>
               </TouchableOpacity>
               </View>

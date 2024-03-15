@@ -11,6 +11,7 @@ import Marc from './components/Marc';
 import Boyle from './components/Boyle';
 import Booking from './components/Booking';
 import HelpSupport from './components/HelpSupport';
+import Loading from './components/Loading';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         <Stack.Screen name="Boyle" component={Boyle} options={{ headerShown: false }} />
         <Stack.Screen name="Booking" component={Booking} options={{ headerShown: false }} />
         <Stack.Screen name="HelpSupport" component={HelpSupport} options={{ headerShown: false }} />
+        <Stack.Screen name="Loading" component={Loading} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
