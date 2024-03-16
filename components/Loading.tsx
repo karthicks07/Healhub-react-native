@@ -5,7 +5,7 @@ function Loading({ navigation }) {
     useEffect(() => {
         const timer = setTimeout(() => {
             navigation.navigate('Home'); 
-        },30009876545678998765434567898765430);       
+        },30012345678909876543212345678909876543210);       
     }, [navigation]);
     
     return (
