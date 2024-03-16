@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Button } from 'react-native'
 import {useEffect} from 'react'
 function Booked({ navigation }) {
     
@@ -16,11 +16,13 @@ function Booked({ navigation }) {
           <Text style={{fontSize:15, color:'#6B779A'}}>Don't worry, we will look after you😊</Text>
         </View>
           <View style={{height:50}}/>
-        <View style={styles.homebutton}>
           <TouchableOpacity  onPress={() => navigation.navigate('Home')}>
+          <View style={styles.homebutton}>
+           <View style={styles.buttoninner}>
             <Text style={{color:'white',fontSize:20}}>Home</Text>
+           </View>
+          </View>
         </TouchableOpacity>
-        </View>
        </View>
     </SafeAreaView>
   )
@@ -64,16 +66,22 @@ const styles = StyleSheet.create({
   fontSize:23,
  },
  homebutton:{
-    height:50,
-    width:120,
-    borderRadius:10,
-    display:'flex',
-    flexDirection:'row',
-    justifyContent:'center',
-    alignItems:'center',
-    elevation:8,
-    shadowColor:'#3E64FF',
-    backgroundColor:'#3E64FF'
+  height:50,
+  width:120,
+  backgroundColor:'#3E64FF',
+  borderRadius:10,
+  display:'flex',
+  flexDirection:'row',
+  justifyContent:'center',
+  alignItems:'center'
+ },
+ buttoninner:{
+  height:45,
+  width:'85%',
+  display:'flex',
+  flexDirection:'row',
+  justifyContent:'center',
+  alignItems:'center'
  }
 
 }
