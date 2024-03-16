@@ -1,10 +1,10 @@
 import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking } from 'react-native'
 import {useEffect} from 'react'
-function Loading({ navigation }) {
+function Booked({ navigation }) {
     
     useEffect(() => {
         const timer = setTimeout(() => {
-            navigation.navigate('Booked'); 
+            navigation.navigate('Home'); 
         },3000);       
     }, [navigation]);
     
@@ -13,13 +13,13 @@ function Loading({ navigation }) {
        <View style={styles.mainload}>
         <View style={styles.innerload}>
             <View>
-              <Image source={require('../assets/pics/onlineDoctor1.png')}  style={styles.loadingimage}/>
+              <Image source={require('../assets/pics/onlineDoctor2.png')}  style={styles.loadingimage}/>
             </View>
         </View>
         <View style={styles.process}>
-          <Text style={styles.processtext}>Processing your appointment...</Text>
+          <Text style={styles.processtext}>Appointment Booked Successfully!</Text>
           <View style={{height:8}}/>
-          <Text style={{fontSize:15, color:'#6B779A'}}>Please wait for a while</Text>
+          <Text style={{fontSize:15, color:'#6B779A'}}>Don't worry, we will look after you😊</Text>
         </View>
           <View style={{height:50}}/>
         <View style={styles.tipcontainer}>
@@ -107,4 +107,4 @@ const styles = StyleSheet.create({
 );
 
   
-  export default Loading;
+  export default Booked;

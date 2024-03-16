@@ -12,6 +12,7 @@ import Boyle from './components/Boyle';
 import Booking from './components/Booking';
 import HelpSupport from './components/HelpSupport';
 import Loading from './components/Loading';
+import Booked from './components/Booked';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
         <Stack.Screen name="Booking" component={Booking} options={{ headerShown: false }} />
         <Stack.Screen name="HelpSupport" component={HelpSupport} options={{ headerShown: false }} />
         <Stack.Screen name="Loading" component={Loading} options={{ headerShown: false }} />
+        <Stack.Screen name="Booked" component={Booked} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
