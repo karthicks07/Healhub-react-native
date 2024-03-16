@@ -23,7 +23,8 @@ function Loading({ navigation }) {
             </View>
         </View>
         <View style={styles.process}>
-          <Text style={styles.processtext}>{`${name}, booking your appointment...`}</Text>
+          <Text style={styles.processtext}>{`${name},`}</Text>
+          <Text style={styles.processtext}>booking your appointment...</Text>
           <View style={{height:8}}/>
           <Text style={{fontSize:15, color:'#6B779A'}}>Please wait for a while</Text>
         </View>
@@ -74,6 +75,7 @@ const styles = StyleSheet.create({
   display:'flex',
   flexDirection:'column',
   justifyContent:'center',
+  textAlign:'center',
   alignItems:'center',
  },
  processtext:{
