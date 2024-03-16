@@ -1,5 +1,10 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking } from 'react-native'
-import {useEffect} from 'react'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { useEffect } from 'react';
+import { useRoute, RouteProp } from '@react-navigation/native'; 
+
+type RootStackParamList = {
+  Loading: { name: string };
+};
 function Loading({ navigation }) {
     
     useEffect(() => {
@@ -7,7 +12,8 @@ function Loading({ navigation }) {
             navigation.navigate('Booked'); 
         },3000);       
     }, [navigation]);
-    
+    const route = useRoute<RouteProp<RootStackParamList, 'Loading'>>();
+    const { name } = route.params;
     return (
       <SafeAreaView style={styles.container}>
        <View style={styles.mainload}>
@@ -17,14 +23,14 @@ function Loading({ navigation }) {
             </View>
         </View>
         <View style={styles.process}>
-          <Text style={styles.processtext}>Processing your appointment...</Text>
+          <Text style={styles.processtext}>{`${name}, booking your appointment...`}</Text>
           <View style={{height:8}}/>
           <Text style={{fontSize:15, color:'#6B779A'}}>Please wait for a while</Text>
         </View>
           <View style={{height:50}}/>
         <View style={styles.tipcontainer}>
           <View style={styles.tipinner1}>
-            <Text style={{fontSize:18}}>Medical Tip💡</Text>
+            <Text style={{fontSize:18, color:'#222B45'}}>Medical Tip💡</Text>
           </View>
           <View style={{height:5}}/>
           <View style={styles.tipinner2}>

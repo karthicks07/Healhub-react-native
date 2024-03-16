@@ -60,6 +60,11 @@ function Booking({ navigation }) {
       };
   };
 
+  const [name, setName] = useState('');
+
+  const handleContinue = () => {
+    navigation.navigate('Loading', { name });
+  };
   return (
     <SafeAreaView style={styles.container}>
       <View style={{ height: 35 }} />
@@ -121,7 +126,7 @@ function Booking({ navigation }) {
             <View style={styles.patientcontainer}>
               <Text style={{fontSize:17,color:'#6B779A'}}>Name:</Text>
               <View style={{ height: 5 }} />
-              <TextInput placeholder='Enter your name...' clearButtonMode='always' placeholderTextColor="#959595" style={styles.searchbar}/>
+              <TextInput placeholder='Enter your name...' clearButtonMode='always' value={name} onChangeText={setName} placeholderTextColor="#959595" style={styles.searchbar}/>
               <View style={{ height: 15 }} />
               <Text style={{fontSize:17,color:'#6B779A'}}>Age:</Text>
               <View style={{ height: 5 }} />
@@ -146,7 +151,7 @@ function Booking({ navigation }) {
               </View>
               <View style={{ height: 50 }} />
               <View style={styles.bookbutton}>
-              <TouchableOpacity onPress={() => navigation.navigate('Loading')} style={styles.button}>
+              <TouchableOpacity onPress={handleContinue} style={styles.button}>
                 <Text style={styles.buttonText}>Book Appointment</Text>
               </TouchableOpacity>
               </View>

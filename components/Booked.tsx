@@ -2,12 +2,6 @@ import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking 
 import {useEffect} from 'react'
 function Booked({ navigation }) {
     
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            navigation.navigate('Home'); 
-        },3000);       
-    }, [navigation]);
-    
     return (
       <SafeAreaView style={styles.container}>
        <View style={styles.mainload}>
@@ -22,15 +16,10 @@ function Booked({ navigation }) {
           <Text style={{fontSize:15, color:'#6B779A'}}>Don't worry, we will look after you😊</Text>
         </View>
           <View style={{height:50}}/>
-        <View style={styles.tipcontainer}>
-          <View style={styles.tipinner1}>
-            <Text style={{fontSize:18}}>Medical Tip💡</Text>
-          </View>
-          <View style={{height:5}}/>
-          <View style={styles.tipinner2}>
-          <View style={{width:25}}/>
-            <Text  style={{fontSize:14,color:'#6B779A'}}>Stay hydrated: Drink plenty of water throughout the day to maintain good overall health and prevent dehydration.</Text>
-          </View>
+        <View style={styles.homebutton}>
+          <TouchableOpacity  onPress={() => navigation.navigate('Home')}>
+            <Text style={{color:'white',fontSize:20}}>Home</Text>
+        </TouchableOpacity>
         </View>
        </View>
     </SafeAreaView>
@@ -74,34 +63,18 @@ const styles = StyleSheet.create({
   color:'#222B45',
   fontSize:23,
  },
- tipcontainer:{
-  height:100,
-  width:'85%',
-  borderRadius:20,
-  display:'flex',
-  flexDirection:'column',
-  justifyContent:'flex-start',
-  backgroundColor:'#E7E6EE',
-  elevation:2
- },
- tipinner1:{
-  marginTop:7,
-  height:45,
-  width:'35%',
-  display:'flex',
-  flexDirection:'row',
-  justifyContent:'center',
-  alignItems:'center',
- },
- tipinner2:{
-  marginTop:-20,
-  height:55,
-  width:'90%',
-  display:'flex',
-  flexDirection:'row',
-  justifyContent:'center',
-  alignItems:'center',
- },
+ homebutton:{
+    height:50,
+    width:120,
+    borderRadius:10,
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center',
+    elevation:8,
+    shadowColor:'#3E64FF',
+    backgroundColor:'#3E64FF'
+ }
 
 }
 );
