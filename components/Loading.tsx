@@ -24,7 +24,7 @@ function Loading({ navigation }) {
         </View>
         <View style={styles.process}>
           <Text style={styles.processtext}>{`${name},`}</Text>
-          <Text style={styles.processtext}>booking your appointment...</Text>
+          <Text style={styles.processtext}>We are booking your appointment...</Text>
           <View style={{height:8}}/>
           <Text style={{fontSize:15, color:'#6B779A'}}>Please wait for a while</Text>
         </View>

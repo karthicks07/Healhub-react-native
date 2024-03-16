@@ -1,10 +1,14 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Alert } from 'react-native'
 import React, { useState } from 'react'
 
 function Booking({ navigation }) {
   const [selectedDateIndex, setSelectedDateIndex] = useState(null);
   const [selectedTimeIndex, setSelectedTimeIndex] = useState(null);
   const [selectedGender, setSelectedGender] = useState(null);
+  const [name1, setName1] = useState('');
+  const [age, setAge] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+
 
   const handleDatePress = (index) => {
       setSelectedDateIndex(index);
@@ -62,7 +66,13 @@ function Booking({ navigation }) {
 
   const [name, setName] = useState('');
 
+  
+
   const handleContinue = () => {
+    if (!name.trim() || !age.trim() || !phoneNumber.trim()) {
+      Alert.alert('Error', 'All fields are mandatory');
+      return;
+    }
     navigation.navigate('Loading', { name });
   };
   return (
@@ -99,15 +109,38 @@ function Booking({ navigation }) {
             <View style={styles.patientcontainer}>
               <Text style={{fontSize:17,color:'#6B779A'}}>Name:</Text>
               <View style={{ height: 5 }} />
-              <TextInput placeholder='Enter your name...' clearButtonMode='always' value={name} onChangeText={setName} placeholderTextColor="#959595" style={styles.searchbar}/>
+              <TextInput 
+            placeholder='Enter your name...' 
+            clearButtonMode='always' 
+            value={name} 
+            onChangeText={setName} 
+            placeholderTextColor="#959595" 
+            style={styles.searchbar}
+          />
               <View style={{ height: 15 }} />
               <Text style={{fontSize:17,color:'#6B779A'}}>Age:</Text>
               <View style={{ height: 5 }} />
-              <TextInput placeholder='Enter your age...' clearButtonMode='always' keyboardType="numeric" placeholderTextColor="#959595" style={styles.searchbar}/>
+              <TextInput 
+            placeholder='Enter your age...' 
+            clearButtonMode='always' 
+            keyboardType="numeric" 
+            value={age} 
+            onChangeText={setAge} 
+            placeholderTextColor="#959595" 
+            style={styles.searchbar}
+          />
               <View style={{ height: 15 }} />
               <Text style={{fontSize:17,color:'#6B779A'}}>Phone Number:</Text>
               <View style={{ height: 5 }} />
-              <TextInput placeholder='+91' clearButtonMode='always'  keyboardType="numeric" placeholderTextColor="#959595" style={styles.searchbar}/>
+              <TextInput 
+            placeholder='+91' 
+            clearButtonMode='always'  
+            keyboardType="numeric" 
+            value={phoneNumber} 
+            onChangeText={setPhoneNumber} 
+            placeholderTextColor="#959595" 
+            style={styles.searchbar}
+          />
               <View style={{ height: 15 }} />
               <View style={{ height: 50 }} />
             </View>
