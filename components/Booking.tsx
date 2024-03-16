@@ -91,7 +91,30 @@ function Booking({ navigation }) {
         </View>
         <View>
         </View>
+        <View style={{ height: 15 }} />
+            <View style={styles.available}>
+           <Text style={{fontSize:20}}>Patient Details</Text>
+           </View>
+              <View style={{ height: 15 }} />
+            <View style={styles.patientcontainer}>
+              <Text style={{fontSize:17,color:'#6B779A'}}>Name:</Text>
+              <View style={{ height: 5 }} />
+              <TextInput placeholder='Enter your name...' clearButtonMode='always' value={name} onChangeText={setName} placeholderTextColor="#959595" style={styles.searchbar}/>
+              <View style={{ height: 15 }} />
+              <Text style={{fontSize:17,color:'#6B779A'}}>Age:</Text>
+              <View style={{ height: 5 }} />
+              <TextInput placeholder='Enter your age...' clearButtonMode='always' keyboardType="numeric" placeholderTextColor="#959595" style={styles.searchbar}/>
+              <View style={{ height: 15 }} />
+              <Text style={{fontSize:17,color:'#6B779A'}}>Phone Number:</Text>
+              <View style={{ height: 5 }} />
+              <TextInput placeholder='+91' clearButtonMode='always'  keyboardType="numeric" placeholderTextColor="#959595" style={styles.searchbar}/>
+              <View style={{ height: 15 }} />
+              <View style={{ height: 50 }} />
+            </View>
         <View style={{ height: 10 }} />
+        <View style={styles.available}>
+           <Text style={{fontSize:20}}>Available Dates</Text>
+           </View>
             <View style={styles.datecontainer}>
               {[0, 1, 2, 3].map(index => (
                 <TouchableOpacity key={index} onPress={() => handleDatePress(index)} style={getDateContainerStyle(index)}>
@@ -119,43 +142,29 @@ function Booking({ navigation }) {
               ))}
            </View>
             <View style={{ height: 15 }} />
-            <View style={styles.available}>
-           <Text style={{fontSize:20}}>Patient Details</Text>
+           <View style={styles.available}>
+           <Text style={{fontSize:20}}>Gender</Text>
            </View>
-              <View style={{ height: 15 }} />
-            <View style={styles.patientcontainer}>
-              <Text style={{fontSize:17,color:'#6B779A'}}>Name:</Text>
-              <View style={{ height: 5 }} />
-              <TextInput placeholder='Enter your name...' clearButtonMode='always' value={name} onChangeText={setName} placeholderTextColor="#959595" style={styles.searchbar}/>
-              <View style={{ height: 15 }} />
-              <Text style={{fontSize:17,color:'#6B779A'}}>Age:</Text>
-              <View style={{ height: 5 }} />
-              <TextInput placeholder='Enter your age...' clearButtonMode='always' keyboardType="numeric" placeholderTextColor="#959595" style={styles.searchbar}/>
-              <View style={{ height: 15 }} />
-              <Text style={{fontSize:17,color:'#6B779A'}}>Phone Number:</Text>
-              <View style={{ height: 5 }} />
-              <TextInput placeholder='+91' clearButtonMode='always'  keyboardType="numeric" placeholderTextColor="#959595" style={styles.searchbar}/>
-              <View style={{ height: 15 }} />
-              <Text style={{fontSize:17,color:'#6B779A'}}>Gender</Text>
               <View style={{ height: 10 }} />
               <View style={styles.gendercontainer}>
                 <TouchableOpacity onPress={() => handleGenderPress('male')} style={getGenderContainerStyle('male')}>
                   <Text style={getGenderTextStyle('male')}>Male</Text>
                 </TouchableOpacity>
+                <View style={{ width: 20 }} />
                 <TouchableOpacity onPress={() => handleGenderPress('female')} style={getGenderContainerStyle('female')}>
                   <Text style={getGenderTextStyle('female')}>Female</Text>
                 </TouchableOpacity>
+                <View style={{ width: 20 }} />
                 <TouchableOpacity onPress={() => handleGenderPress('other')} style={getGenderContainerStyle('other')}>
                   <Text style={getGenderTextStyle('other')}>Other</Text>
                 </TouchableOpacity>
               </View>
-              <View style={{ height: 50 }} />
-              <View style={styles.bookbutton}>
+              <View style={{ height: 40 }} />
               <TouchableOpacity onPress={handleContinue} style={styles.button}>
+              <View style={styles.bookbutton}>
                 <Text style={styles.buttonText}>Book Appointment</Text>
-              </TouchableOpacity>
               </View>
-            </View>
+              </TouchableOpacity>
       </View>
     </SafeAreaView>
   )
@@ -302,18 +311,22 @@ gender: {
   height: 40,
   width: 80,
   borderRadius: 10,
-  backgroundColor: 'white',
+  backgroundColor: 'red',
   elevation: 2,
   justifyContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
 },
 bookbutton:{
   height:50,
-  width:'100%',
+  width:'90%',
+  display:'flex',
+  flexDirection:'row',
+  justifyContent:'center',
+  alignItems:'center'
 },
 button: {
   height:50,
-  width:'100%',
+  width:'85%',
   backgroundColor:'#3E64FF',
   borderRadius:10,
   display:'flex',

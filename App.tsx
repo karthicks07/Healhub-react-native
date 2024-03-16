@@ -13,6 +13,10 @@ import Booking from './components/Booking';
 import HelpSupport from './components/HelpSupport';
 import Loading from './components/Loading';
 import Booked from './components/Booked';
+import Smith from './components/Smith';
+import Lee from './components/Lee';
+import Johnson from './components/Johnson';
+import Gracia from './components/Gracia';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -31,6 +35,10 @@ export default function App() {
         <Stack.Screen name="HelpSupport" component={HelpSupport} options={{ headerShown: false }} />
         <Stack.Screen name="Loading" component={Loading} options={{ headerShown: false }} />
         <Stack.Screen name="Booked" component={Booked} options={{ headerShown: false }} />
+        <Stack.Screen name="Smith" component={Smith} options={{ headerShown: false }} />
+        <Stack.Screen name="Lee" component={Lee} options={{ headerShown: false }} />
+        <Stack.Screen name="Johnson" component={Johnson} options={{ headerShown: false }} />
+        <Stack.Screen name="Gracia" component={Gracia} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

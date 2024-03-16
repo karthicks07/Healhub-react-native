@@ -15,48 +15,12 @@ function Home({ navigation }) {
     { name: 'Dr. Martinez K', specialty: 'Pediatriction', rating: '⭐️ 3.9 (15 reviews)', image: require('../assets/pics/martinez.png'), route:'Martinez' },
     { name: 'Dr. Marc M', specialty: 'Viralogist', rating: '⭐️ 4.4 (155 reviews)', image: require('../assets/pics/marc.png'), route:'Marc' },
     { name: 'Dr. Boyle J', specialty: 'Radiologist', rating: '⭐️ 4.1 (2134 reviews)', image: require('../assets/pics/boyle.png'), route:'Boyle' },
-    { 
-      name: 'Dr. Smith W', 
-      specialty: 'Cardiologist', 
-      rating: '⭐️ 4.8 (98 reviews)', 
-      image: require('../assets/pics/martinez.png'), 
-      route: 'Marc'
-    },
-    { 
-      name: 'Dr. Lee A', 
-      specialty: 'Neurologist', 
-      rating: '⭐️ 4.6 (176 reviews)', 
-      image: require('../assets/pics/marc.png'), 
-      route: 'Marc'
-    },
-    { 
-      name: 'Dr. Johnson R', 
-      specialty: 'Dermatologist', 
-      rating: '⭐️ 4.7 (210 reviews)', 
-      image: require('../assets/pics/boyle.png'), 
-      route: 'Marc'
-    },
-    { 
-      name: 'Dr. Garcia S', 
-      specialty: 'Endocrinologist', 
-      rating: '⭐️ 4.9 (312 reviews)', 
-      image: require('../assets/pics/klimisch.png'), 
-      route: 'Marc'
-    },
-    { 
-      name: 'Dr. Wang Y', 
-      specialty: 'Orthopedic Surgeon', 
-      rating: '⭐️ 4.5 (176 reviews)', 
-      image: require('../assets/pics/bellamy.png'), 
-      route: 'Marc'
-    },
-    { 
-      name: 'Dr. Patel M', 
-      specialty: 'Psychiatrist', 
-      rating: '⭐️ 4.6 (264 reviews)', 
-      image: require('../assets/pics/mensah.png'), 
-      route: 'Marc'
-    }
+    { name: 'Dr. Smith W', specialty: 'Cardiologist',rating: '⭐️ 4.8 (98 reviews)', image: require('../assets/pics/smith.png'), route: 'Smith' },
+    { name: 'Dr. Lee A', specialty: 'Neurologist',  rating: '⭐️ 4.6 (176 reviews)', image: require('../assets/pics/lee.png'), route: 'Lee'},
+    { name: 'Dr. Johnson R', specialty: 'Dermatologist', rating: '⭐️ 4.7 (210 reviews)', image: require('../assets/pics/johnson.png'), route: 'Johnson'},
+    { name: 'Dr. Garcia S', specialty: 'Endocrinologist', rating: '⭐️ 4.9 (312 reviews)', image: require('../assets/pics/gracia.png'), route: 'Marc'},
+    { name: 'Dr. Wang Y', specialty: 'Orthopedic Surgeon', rating: '⭐️ 4.5 (176 reviews)', image: require('../assets/pics/wang.png'), route: 'Marc'},
+    { name: 'Dr. Patel M', specialty: 'Psychiatrist', rating: '⭐️ 4.6 (264 reviews)', image: require('../assets/pics/patel.png'), route: 'Marc'}
     
   ];
   const filteredDoctors = doctors.filter(doctor =>
