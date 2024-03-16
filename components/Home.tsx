@@ -18,9 +18,9 @@ function Home({ navigation }) {
     { name: 'Dr. Smith W', specialty: 'Cardiologist',rating: '⭐️ 4.8 (98 reviews)', image: require('../assets/pics/smith.png'), route: 'Smith' },
     { name: 'Dr. Lee A', specialty: 'Neurologist',  rating: '⭐️ 4.6 (176 reviews)', image: require('../assets/pics/lee.png'), route: 'Lee'},
     { name: 'Dr. Johnson R', specialty: 'Dermatologist', rating: '⭐️ 4.7 (210 reviews)', image: require('../assets/pics/johnson.png'), route: 'Johnson'},
-    { name: 'Dr. Garcia S', specialty: 'Endocrinologist', rating: '⭐️ 4.9 (312 reviews)', image: require('../assets/pics/gracia.png'), route: 'Marc'},
-    { name: 'Dr. Wang Y', specialty: 'Orthopedic Surgeon', rating: '⭐️ 4.5 (176 reviews)', image: require('../assets/pics/wang.png'), route: 'Marc'},
-    { name: 'Dr. Patel M', specialty: 'Psychiatrist', rating: '⭐️ 4.6 (264 reviews)', image: require('../assets/pics/patel.png'), route: 'Marc'}
+    { name: 'Dr. Garcia S', specialty: 'Endocrinologist', rating: '⭐️ 4.9 (312 reviews)', image: require('../assets/pics/gracia.png'), route: 'Gracia'},
+    { name: 'Dr. Wang Y', specialty: 'Orthopedic Surgeon', rating: '⭐️ 4.5 (176 reviews)', image: require('../assets/pics/wang.png'), route: 'Wang'},
+    { name: 'Dr. Patel M', specialty: 'Psychiatrist', rating: '⭐️ 4.6 (264 reviews)', image: require('../assets/pics/patel.png'), route: 'Patel'}
     
   ];
   const filteredDoctors = doctors.filter(doctor =>

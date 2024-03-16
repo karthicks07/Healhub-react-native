@@ -17,6 +17,8 @@ import Smith from './components/Smith';
 import Lee from './components/Lee';
 import Johnson from './components/Johnson';
 import Gracia from './components/Gracia';
+import Wang from './components/Wang';
+import Patel from './components/Patel';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -39,6 +41,8 @@ export default function App() {
         <Stack.Screen name="Lee" component={Lee} options={{ headerShown: false }} />
         <Stack.Screen name="Johnson" component={Johnson} options={{ headerShown: false }} />
         <Stack.Screen name="Gracia" component={Gracia} options={{ headerShown: false }} />
+        <Stack.Screen name="Wang" component={Wang} options={{ headerShown: false }} />
+        <Stack.Screen name="Patel" component={Patel} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -1,6 +1,6 @@
 import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking } from 'react-native'
 import React from 'react'
-function Gracia({ navigation }) {
+function Patel({ navigation }) {
   const Whatsapp = async (phoneNumber) => {
     Linking.openURL(`whatsapp://send?phone=${phoneNumber}`);
   };
@@ -35,10 +35,10 @@ function Gracia({ navigation }) {
           </View>
         </View>
         <View style={styles.doctorprofile}>
-          <Image source={require('../assets/pics/gracia.png')} style={styles.doctorpic}/>
+          <Image source={require('../assets/pics/patel.png')} style={styles.doctorpic}/>
           <View style={{ height: 15 }} />
-          <Text style={{fontSize:22,color:'#222B45'}}>Dr.Gracia</Text>
-          <Text style={{fontSize:16,color:'#6B779A'}}>Endocrinologist</Text>
+          <Text style={{fontSize:22,color:'#222B45'}}>Dr. Patel M</Text>
+          <Text style={{fontSize:16,color:'#6B779A'}}>Psychiatrist</Text>
           <View style={{ height: 15 }} />
           <View style={styles.batches}>
               <View style={styles.batch01}>
@@ -56,7 +56,7 @@ function Gracia({ navigation }) {
               <View style={styles.batch01}>
                 <Image source={require('../assets/pics/batch3.png')} style={styles.batch1}/>
                 <View style={{ height: 10 }} />
-                <Text style={{fontSize:18,color:'#222B45'}}>4.9</Text>
+                <Text style={{fontSize:18,color:'#222B45'}}>4.6</Text>
                 <Text style={{fontSize:16,color:'#6B779A'}}>Ratings</Text>
               </View>
           </View>
@@ -295,4 +295,4 @@ bookbutton:{
 );
 
   
-  export default Gracia;
+  export default Patel;

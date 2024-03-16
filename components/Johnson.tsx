@@ -30,9 +30,6 @@ function Johnson({ navigation }) {
             </View>
             <View>
               <View style={styles.logout2}>
-                <View>
-                  <Image source={require('../assets/pics/KebabMenu.png')} style={styles.filtericon} />
-                </View>
               </View>
             </View>
           </View>
