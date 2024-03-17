@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Button, StatusBar } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, StatusBar } from 'react-native'
 import {useEffect} from 'react'
 function Booked({ navigation }) {
     
@@ -12,7 +12,7 @@ function Booked({ navigation }) {
             </View>
         </View>
         <View style={styles.process}>
-          <Text style={styles.processtext}>Appointment Booked Successfully!</Text>
+          <Text style={styles.processtext}>Yeah, Appointment Booked!</Text>
           <View style={{height:8}}/>
           <Text style={{fontSize:15, color:'#6B779A'}}>Don't worry, we will look after you😊</Text>
         </View>

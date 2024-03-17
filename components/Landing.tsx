@@ -1,7 +1,8 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, StatusBar} from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, StatusBar, ScrollView} from 'react-native'
 import React from 'react'
 function Landing({ navigation }) {
     return (
+      <ScrollView >
       <SafeAreaView style={styles.container}>
       <StatusBar hidden={false}/>
       <View style={styles.maincontainer}>
@@ -83,6 +84,7 @@ function Landing({ navigation }) {
         </View>
       </View>
     </SafeAreaView>
+    </ScrollView >
   )
 }
 

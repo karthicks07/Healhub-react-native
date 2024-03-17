@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking, StatusBar } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking, StatusBar, ScrollView } from 'react-native'
 import React from 'react'
 function Smith({ navigation }) {
   const Whatsapp = async (phoneNumber) => {
@@ -9,6 +9,7 @@ function Smith({ navigation }) {
   }
   
     return (
+      <ScrollView >
         <SafeAreaView style={styles.container}>
         <StatusBar hidden={false}/>
         <View style={styles.maincontainer}>
@@ -115,6 +116,7 @@ function Smith({ navigation }) {
           <View style={{ height: 15 }} />
         </View>
       </SafeAreaView>
+      </ScrollView >
   )
 }
 

@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking, StatusBar } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking, StatusBar, ScrollView } from 'react-native'
 import React from 'react'
 function Johnson({ navigation }) {
   const Whatsapp = async (phoneNumber) => {
@@ -9,6 +9,7 @@ function Johnson({ navigation }) {
   }
   
     return (
+      <ScrollView >
       <SafeAreaView style={styles.container}>
        <StatusBar hidden={false}/>
       <View style={styles.maincontainer}>
@@ -117,6 +118,7 @@ function Johnson({ navigation }) {
         <View style={{ height: 15 }} />
         </View>
     </SafeAreaView>
+    </ScrollView >
   )
 }
 

@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Alert, StatusBar } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Alert, StatusBar, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 
 function Booking({ navigation }) {
@@ -76,6 +76,7 @@ function Booking({ navigation }) {
     navigation.navigate('Loading', { name });
   };
   return (
+    <ScrollView >
     <SafeAreaView style={styles.container}>
       <StatusBar hidden={false}/>
       <View style={styles.maincontainer}>
@@ -200,6 +201,7 @@ function Booking({ navigation }) {
               </TouchableOpacity>
       </View>
     </SafeAreaView>
+    </ScrollView >
   )
 }
 

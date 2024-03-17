@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking, StatusBar } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking, StatusBar, ScrollView } from 'react-native'
 import React from 'react'
 function Bellamy({ navigation }) {
   const Whatsapp = async (phoneNumber) => {
@@ -9,6 +9,7 @@ function Bellamy({ navigation }) {
   }
   
     return (
+      <ScrollView >
       <SafeAreaView style={styles.container}>
         <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
       <View style={styles.maincontainer}>
@@ -117,6 +118,7 @@ function Bellamy({ navigation }) {
         <View style={{ height: 15 }} />
         </View>
     </SafeAreaView>
+    </ScrollView >
   )
 }
 
