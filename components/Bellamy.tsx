@@ -10,7 +10,7 @@ function Bellamy({ navigation }) {
   
     return (
       <SafeAreaView style={styles.container}>
-        <StatusBar hidden={false}/>
+        <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
       <View style={styles.maincontainer}>
         <View style={styles.head}>
           <View style={styles.headcontainer} >
