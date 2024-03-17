@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, Image, StatusBar } from 'react-native';
 import { useEffect } from 'react';
 import { useRoute, RouteProp } from '@react-navigation/native'; 
 
@@ -16,6 +16,7 @@ function Loading({ navigation }) {
     const { name } = route.params;
     return (
       <SafeAreaView style={styles.container}>
+        <StatusBar hidden={false}/>
        <View style={styles.mainload}>
         <View style={styles.innerload}>
             <View>

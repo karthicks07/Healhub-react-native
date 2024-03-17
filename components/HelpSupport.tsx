@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Linking, StatusBar } from 'react-native'
 import React from 'react'
 function HelpSupport({ navigation }) {
   const Whatsapp = async (phoneNumber) => {
@@ -9,7 +9,7 @@ function HelpSupport({ navigation }) {
   }
     return (
       <SafeAreaView style={styles.container}>
-       <View style={{ height: 35 }} />
+       <StatusBar hidden={false}/>
       <View style={styles.maincontainer}>
         <View style={styles.head}>
           <View style={styles.headcontainer} >

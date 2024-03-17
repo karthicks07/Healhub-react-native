@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Alert } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, Alert, StatusBar } from 'react-native'
 import React, { useState } from 'react'
 
 function Booking({ navigation }) {
@@ -70,14 +70,14 @@ function Booking({ navigation }) {
 
   const handleContinue = () => {
     if (!name.trim() || !age.trim() || !phoneNumber.trim()) {
-      Alert.alert('Error', 'All fields are mandatory');
+      Alert.alert('Buddy😏,', 'Please fill all details.');
       return;
     }
     navigation.navigate('Loading', { name });
   };
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{ height: 35 }} />
+      <StatusBar hidden={false}/>
       <View style={styles.maincontainer}>
         <View style={styles.head}>
           <View style={styles.headcontainer} >

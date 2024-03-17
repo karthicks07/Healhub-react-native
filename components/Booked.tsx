@@ -1,9 +1,10 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Button } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, Button, StatusBar } from 'react-native'
 import {useEffect} from 'react'
 function Booked({ navigation }) {
     
     return (
       <SafeAreaView style={styles.container}>
+        <StatusBar hidden={false}/>
        <View style={styles.mainload}>
         <View style={styles.innerload}>
             <View>

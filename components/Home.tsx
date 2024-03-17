@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ScrollView, Modal } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ScrollView, StatusBar } from 'react-native'
 import React, { useState } from 'react';
 
 function Home({ navigation }) {
@@ -30,7 +30,7 @@ function Home({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{ height: 35 }} />
+      <StatusBar hidden={false}/>
       <View style={styles.maincontainer}>
         <View style={styles.head}>
           <View style={styles.headcontainer} >
