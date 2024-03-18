@@ -9,7 +9,7 @@ function Landing({ navigation }) {
         <View style={styles.head}>
           <View style={styles.headcontainer} >
             <View>
-            <Text style={styles.heading}>Welcome, Karthick</Text>
+            <Text style={styles.heading}>Welcome, Buddy</Text>
             </View>
             <View>
               <View style={styles.logout}>
