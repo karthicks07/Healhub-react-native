@@ -1,6 +1,7 @@
 import { SafeAreaView, StyleSheet, Text, View, Image, StatusBar } from 'react-native';
 import { useEffect } from 'react';
 import { useRoute, RouteProp } from '@react-navigation/native'; 
+import React from 'react';
 
 type RootStackParamList = {
   Loading: { name: string };

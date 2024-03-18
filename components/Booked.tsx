@@ -1,5 +1,5 @@
-import { SafeAreaView, StyleSheet, Text, View, Image, TouchableOpacity, StatusBar } from 'react-native'
-import {useEffect} from 'react'
+import { SafeAreaView, StatusBar, StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import React from 'react';
 function Booked({ navigation }) {
     
     return (
