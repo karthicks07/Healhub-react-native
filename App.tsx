@@ -18,7 +18,7 @@ import Johnson from './components/Johnson';
 import Gracia from './components/Gracia';
 import Wang from './components/Wang';
 import Patel from './components/Patel';
-import Landing from './components/Landing';
+import Landing from './components/landing';
 const Stack = createStackNavigator();
 
 export default function App() {
