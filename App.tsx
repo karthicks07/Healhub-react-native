@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import Landing from './components/landing';
 import Home from './components/Home';
 import Bellamy from './components/Bellamy';
 import Mensah from './components/Mensah';
@@ -18,14 +19,13 @@ import Johnson from './components/Johnson';
 import Gracia from './components/Gracia';
 import Wang from './components/Wang';
 import Patel from './components/Patel';
-import Landing from './components/landing';
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="landing">
-        <Stack.Screen name="landing" component={Landing} options={{ headerShown: false }} />
+      <Stack.Navigator initialRouteName="Landing">
+        <Stack.Screen name="Landing" component={Landing} options={{ headerShown: false }} />
         <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
         <Stack.Screen name="Bellamy" component={Bellamy} options={{ headerShown: false }} />
         <Stack.Screen name="Mensah" component={Mensah} options={{ headerShown: false }} />
