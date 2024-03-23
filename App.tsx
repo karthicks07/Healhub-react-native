@@ -19,14 +19,12 @@ import Gracia from './components/Gracia';
 import Wang from './components/Wang';
 import Patel from './components/Patel';
 import Landing from './components/landing';
-import Logout from './components/Logout';
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Logout">
-        <Stack.Screen name="Logout" component={Logout} options={{ headerShown: false }} />
+      <Stack.Navigator initialRouteName="landing">
         <Stack.Screen name="landing" component={Landing} options={{ headerShown: false }} />
         <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
         <Stack.Screen name="Bellamy" component={Bellamy} options={{ headerShown: false }} />

@@ -11,14 +11,12 @@ function Landing({ navigation }) {
             <View>
             <Text style={styles.heading}>Welcome, Buddy</Text>
             </View>
-            <View style={styles.logout}>
-              <TouchableOpacity onPress={navigation.navigate('Logout')}>
-              <View style={styles.logout11}>
+            <View>
+              <View style={styles.logout}>
                 <View>
                   <Image source={require('../assets/pics/logout.png')} style={styles.logoutIcon} />
                 </View>
               </View>
-              </TouchableOpacity>
             </View>
           </View>
         </View>
@@ -123,27 +121,17 @@ const styles = StyleSheet.create({
   paddingHorizontal: 20,
   width:'100%'
  },
- logout: {
-  height: 40,
-  width: 40,
-  borderRadius: 10,
-  alignItems: 'center',
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'center',
-  elevation: 8,
-  backgroundColor: 'white'
-},
-logout11: {
-  height: 40,
-  width: 40,
-  borderRadius: 10,
-  alignItems: 'center',
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'center',
-  backgroundColor: 'transparent'
-},
+ logout:{
+  height:40,
+  width:40,
+  borderRadius:10,
+  alignItems:'center',
+  display:'flex',
+  flexDirection:'row',
+  justifyContent:'center',
+  elevation:8,
+  backgroundColor:'white'
+ },
  logoutIcon:{
   height:18,
   width:18,
@@ -280,7 +268,6 @@ logout1:{
   justifyContent:'center',
   backgroundColor:'transparent'
  },
- 
 }
 );
 
