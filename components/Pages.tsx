@@ -7,7 +7,7 @@ export function Login({ navigation }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
+  const handleLogin = () => { 
     if (username === 'User1' && password === '123') {
       navigation.navigate('Landing');
     } else {
