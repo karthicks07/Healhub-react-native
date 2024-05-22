@@ -40,7 +40,7 @@ export function Login({ navigation }) {
           <View style={{height:5}}/>
           <TextInput 
             placeholder='Enter your username (User1)' 
-            clearButtonMode='always'
+            clearButtonMode='always'  
             placeholderTextColor="#959595" 
             style={loginstyles.textfield}
             value={username}
