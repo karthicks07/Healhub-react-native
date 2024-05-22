@@ -8,7 +8,7 @@ import { DoctorProfile } from './components/Pages';
 import { Booking } from './components/Pages';
 import { Loading } from './components/Pages';
 import { Booked } from './components/Pages';
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'expo-status-bar'; 
 const Stack = createStackNavigator();
 
 export default function App() {
