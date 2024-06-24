@@ -11,7 +11,7 @@ export function Login({ navigation }) {
     if (username === 'User1' && password === '123') {
       navigation.navigate('Landing');
     } else {
-      Alert.alert('Error', 'Incorrect username or password');
+      Alert.alert('Error', 'Incorrect username or password'); 
     }
   };
 
