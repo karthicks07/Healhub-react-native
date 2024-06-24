@@ -19,7 +19,7 @@ export function Login({ navigation }) {
     setUsername('');
     setPassword('');
   };
-
+ 
   React.useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
       clearFields();
