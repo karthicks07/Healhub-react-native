@@ -5,7 +5,7 @@ import { useRoute, RouteProp } from '@react-navigation/native';
 //Login Page
 export function Login({ navigation }) {
   const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [password, setPassword] = useState(''); 
 
   const handleLogin = () => { 
     if (username === 'User1' && password === '123') {
