@@ -56,7 +56,7 @@ export function Login({ navigation }) {
             style={loginstyles.textfield}
             secureTextEntry={true}
             value={password}
-            onChangeText={text => setPassword(text)}
+            onChangeText={text => setPassword(text)} 
           />
           <View style={{height:25}}/>
           <View style={loginstyles.buttoncontainer}>
